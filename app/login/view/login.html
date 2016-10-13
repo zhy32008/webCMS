@@ -1,12 +1,19 @@
 <head>
    <link rel="stylesheet" href="../css/login.css">
 </head>
-
-<div class="login-group">
+<body>
+<div class="container">
+<form class="form-signin" role="form">
     <h2 class="login-heading">请登录</h2>
     <input type="text" class="form-control" placeholder="用户名" required autofocus>
-    <br>
     <input type="password" class="form-control" placeholder="密码" required >
-    <br>
-    <button class="btn btn-lg btn-primary btn-block" >登录</button>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" value="remember-me">
+            记住我
+        </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" (click)="login()" >登录</button>
+</form>
 </div>
+</body>

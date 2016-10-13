@@ -19,6 +19,9 @@ var LoginComponent = (function () {
     }
     LoginComponent.prototype.ngOnInit = function () {
     };
+    LoginComponent.prototype.login = function () {
+        this.router;
+    };
     LoginComponent = __decorate([
         core_1.Component({
             selector: 'my-login',
