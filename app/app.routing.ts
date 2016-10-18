@@ -12,7 +12,7 @@ import {PageNotFoundComponent} from "./404.component";
 const appRoutes: Routes = [
 
     {
-        path:'',
+        path:'',//the empty path matches as the default path for each level of routing. It also allows for adding routes without extending the URL path
         component:AppComponent,
         canActivate:[AuthGuard],
     },
@@ -22,9 +22,9 @@ const appRoutes: Routes = [
         component:LoginComponent,
     },
     {
-        path: '**',
+        path: '**',//the ** denotes a wildcard path for our route.
         component:PageNotFoundComponent,
     }
 ];
-
+// the RouterModule is provided an array of routes that describe how to navigate. Each Route maps a URL path to a component.
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

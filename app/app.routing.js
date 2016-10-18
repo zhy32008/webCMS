@@ -19,5 +19,6 @@ var appRoutes = [
         component: _404_component_1.PageNotFoundComponent,
     }
 ];
+// the RouterModule is provided an array of routes that describe how to navigate. Each Route maps a URL path to a component.
 exports.routing = router_1.RouterModule.forRoot(appRoutes);
 //# sourceMappingURL=app.routing.js.map

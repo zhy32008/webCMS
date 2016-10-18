@@ -7,10 +7,11 @@ import {LoginComponent} from "./login/js/login.component";
 import {routing} from "./app.routing";
 import {AuthGuard} from "./app.authguard";
 import {PageNotFoundComponent} from "./404.component";
+import {RegisterComponent} from "./login/js/register.component";
 
 @NgModule({
   imports: [ BrowserModule,NgbModule,routing ],
-  declarations: [ AppComponent, LoginComponent,PageNotFoundComponent ],
+  declarations: [ AppComponent, LoginComponent,PageNotFoundComponent,RegisterComponent ],
   bootstrap: [ AppComponent ],
   providers: [AuthGuard]
 })

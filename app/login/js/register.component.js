@@ -1,5 +1,5 @@
 /**
- * Created by dennis.zhao on 2016/10/9.
+ * Created by dennis.zhao on 2016/10/18.
  */
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -11,24 +11,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
-var LoginComponent = (function () {
-    function LoginComponent(router) {
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var RegisterComponent = (function () {
+    function RegisterComponent(router) {
         this.router = router;
     }
-    LoginComponent.prototype.ngOnInit = function () {
+    RegisterComponent.prototype.ngOnInit = function () {
     };
-    LoginComponent.prototype.login = function () {
+    RegisterComponent.prototype.regiser = function () {
     };
-    LoginComponent = __decorate([
+    RegisterComponent = __decorate([
         core_1.Component({
-            selector: 'my-login',
-            templateUrl: 'app/login/view/login.html',
+            selector: 'my-regiser',
+            templateUrl: 'app/login/view/register.html',
         }), 
         __metadata('design:paramtypes', [router_1.Router])
-    ], LoginComponent);
-    return LoginComponent;
+    ], RegisterComponent);
+    return RegisterComponent;
 }());
-exports.LoginComponent = LoginComponent;
-//# sourceMappingURL=login.component.js.map
+exports.RegisterComponent = RegisterComponent;
+//# sourceMappingURL=register.component.js.map
